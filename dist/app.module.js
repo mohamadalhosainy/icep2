@@ -115,11 +115,11 @@ exports.AppModule = AppModule = __decorate([
             }),
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'mysql',
-                database: 'icep',
+                database: 'railway',
                 port: 3306,
-                host: 'localhost',
+                host: 'mysql.railway.internal',
                 username: 'root',
-                password: '',
+                password: 'nRaViaggQXZFHCJLVUFbsunQVMclcLGA',
                 entities: [
                     User_1.UserEntity,
                     Teacher_1.TeacherEntity,

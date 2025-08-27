@@ -105,11 +105,11 @@ import { Tag } from './tags/entities/Tag';
     }),
     TypeOrmModule.forRoot({
       type: 'mysql',
-      database: 'icep',
+      database: 'railway',
       port: 3306,
-      host: 'localhost',
+      host: 'mysql.railway.internal',
       username: 'root',
-      password: '',
+      password: 'nRaViaggQXZFHCJLVUFbsunQVMclcLGA',
       entities: [
         UserEntity,
         TeacherEntity,
