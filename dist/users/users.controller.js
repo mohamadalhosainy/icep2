@@ -80,7 +80,7 @@ let UsersController = class UsersController {
         try {
             if (youtubeTokens) {
                 const { google } = require('googleapis');
-                const oauth2Client = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET, process.env.GOOGLE_ADMIN_REDIRECT_URI || "http://127.0.0.1:3000/admin/auth/google/callback");
+                const oauth2Client = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET, process.env.GOOGLE_ADMIN_REDIRECT_URI);
                 oauth2Client.setCredentials({
                     access_token: youtubeTokens.accessToken,
                     refresh_token: youtubeTokens.refreshToken
@@ -124,7 +124,7 @@ let UsersController = class UsersController {
         try {
             if (youtubeTokens) {
                 const { google } = require('googleapis');
-                const oauth2Client = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET, process.env.GOOGLE_ADMIN_REDIRECT_URI || "http://127.0.0.1:3000/admin/auth/google/callback");
+                const oauth2Client = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET, process.env.GOOGLE_ADMIN_REDIRECT_URI);
                 oauth2Client.setCredentials({
                     access_token: youtubeTokens.accessToken,
                     refresh_token: youtubeTokens.refreshToken

@@ -113,7 +113,7 @@ Make sure the questions cover a range of difficulties and adhere to the specifie
           headers: {
             'Authorization': `Bearer ${apiKey}`,
             'Content-Type': 'application/json',
-            'HTTP-Referer': 'http://localhost:3000',
+            'HTTP-Referer': process.env.FRONTEND_BASE_URL || 'https://icep2-production.up.railway.app',
             'X-Title': 'ICEP Placement Test',
           },
         },
@@ -154,7 +154,7 @@ Make sure the questions cover a range of difficulties and adhere to the specifie
           headers: {
             'Authorization': `Bearer ${apiKey}`,
             'Content-Type': 'application/json',
-            'HTTP-Referer': 'http://localhost:3000',
+            'HTTP-Referer': process.env.FRONTEND_BASE_URL || 'https://icep2-production.up.railway.app',
             'X-Title': 'ICEP Placement Test',
           },
         },

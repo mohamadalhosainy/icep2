@@ -123,7 +123,7 @@ export class AdminDashboardController {
       message: 'YouTube Connection Status',
       user: req.user,
       connected: hasTokens,
-      connectionUrl: hasTokens ? null : 'http://localhost:3000/auth/google',
+              connectionUrl: hasTokens ? null : process.env.FRONTEND_BASE_URL + '/auth/google',
       statusMessage: hasTokens ? 'YouTube API is connected and ready for uploads' : 'Click the connection URL to connect YouTube API'
     };
   }
